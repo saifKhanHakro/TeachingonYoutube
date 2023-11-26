@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Learning
 {
     internal class Program
     {
         public delegate void Callback1(int a, int b);
-        public delegate void Callback2(string);
+        public delegate void Callback2(string print);
         static void Main(string[] args)
         {
             Callback1 handler1 = DelegateMethod;
